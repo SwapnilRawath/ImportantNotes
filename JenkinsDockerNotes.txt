@@ -1,0 +1,31 @@
+Jenkins --
+===========
+
+Open source Continous Integration tool.
+Jenkins will build and deploy the application committed to Git/BitBucket using several plugins
+such as Docker, Maven, Git, Pipeline etc.
+For Continous integration, continous delivery, continous deployment by integrating with other tools
+
+Docker --
+==========
+We need to know what is Virtualization and Containerisation.
+The goal of these two is to solve the problem of my code works on my machine and not on your machine.
+Example is some where in the line the code which works on windows may not run on production unix system due to few unsupporting libraries.
+Virtualization : Here every application runs on virtual machine, since it gets a guests OS on a host OS.
+Draw back is while running multiple virtual machines on same OS (host). This will degrade the performance of the system.
+Since each virtual machine will make use of hosts memory for each of the tools that it uses. It takes time to boot up also.
+
+To over come this problem, Containerization was introduced.
+Containerization : Here the application uses the host OS itslef and not virtual machine. Each container will have a application with set of its libraries.
+Docker is containerization tool which manages different applications which run on different (Docker) containers.
+Docker file contains the code which defines the application dependencies and requirements.
+Through this Docker file the container generates/produces Docker image which contains dependencies such as libraries and packages
+of the application. This docker image runs as a docker container.
+Docker container is a runtime instance of a docker image.
+
+
+
+
+
+
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000f7d4b000, 18763776, 0) failed; error='Cannot allocate memory' (errno=12) on ec2 instance

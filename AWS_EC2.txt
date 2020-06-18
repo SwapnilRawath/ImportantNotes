@@ -1,0 +1,179 @@
+from Swapnil R to Host (privately):
+Yes Habib..
+from Swapnil R to All Participants:
+Yes..
+from Suthergi Xavier to All Participants:
+Good morning all
+from habib to All Attendees:
+Hello Everyone
+from Swaminathan Sahiram to All Participants:
+Good Morning
+from Swaminathan Sahiram to All Participants:
+I am not able to connect to VM. Can you all?
+from Divakar to All Participants:
+GM
+from Divakar to All Participants:
+Not able to connect as well
+from Divakar to All Participants:
+Looks like there was a maintenance that ran Yesterday and after that we are not able to connect
+from Suthergi Xavier to All Participants:
+yes audible
+from Divakar to All Participants:
+Yes
+from Harish Kumar to All Participants:
+yes
+from Surya to All Participants:
+Yes
+from Swaminathan Sahiram to All Participants:
+Habib, your voice was better in previous days.. now there is a echo
+from Divakar to All Participants:
+Node js
+from Divakar to All Participants:
+demo
+from Suthergi Xavier to All Participants:
+expressJS
+from Suthergi Xavier to All Participants:
+mangoDB connection
+from Swaminathan Sahiram to All Participants:
+yes
+from Dinesh Kumar to All Attendees:
+It's not echoing...
+from Divakar to All Participants:
+Not able to access VDI
+from vinoth to All Participants:
+nope
+from habib to All Attendees:
+https://www.jenkins.io/download/
+from vinoth to All Participants:
+can we do it in aws account?
+from Jeyaseeli to All Participants:
+Hi wrt Node js , can we get demo1 ,2 using Nest js as well , in place of Express JS
+from Jeyaseeli to All Participants:
+ok
+from Jeyaseeli to All Participants:
+it will be good for our practice
+from Jeyaseeli to All Participants:
+ok
+from Jeyaseeli to All Participants:
+thanks
+from Jeyaseeli to All Participants:
+ok
+from vinoth to All Participants:
+yes
+from Swapnil R to All Participants:
+Yes
+from Mohd Kose Avase to All Attendees:
+s
+from Muniraj to All Participants:
+yes
+from Surya to All Participants:
+Yes
+from vinoth to All Participants:
+s
+from Swapnil R to All Participants:
+Yes..
+from Divakar to All Participants:
+AWS account is asking for a payment info and it is not accepting the payment info I have given
+from Divakar to All Participants:
+yes
+from Vijay to All Participants:
+You have selected Ohio, generally we select region near to us?
+from Vijay to All Participants:
+ok
+from Dinesh Kumar to All Attendees:
+Which AMI did you selected?
+from Suthergi Xavier to All Participants:
+:Amazon Linux AMI 2018.03.0(HVM), SSD Volume Type
+from Mohd Kose Avase to All Attendees:
+s
+from vinoth to All Participants:
+s
+from Swaminathan Sahiram to All Participants:
+yes
+from Mohd Kose Avase to All Attendees:
+is the session on?
+from Swaminathan Sahiram to All Participants:
+Habib, we need to have all the 4 security groups you added?
+from Swaminathan Sahiram to All Participants:
+we can change these later?
+from Swaminathan Sahiram to All Participants:
+ok
+from Dinesh Kumar to All Attendees:
+Remaining details like IAM Role?
+from Swapnil R to All Participants:
+for now Ignore IAM Role.. start as a user
+from Swaminathan Sahiram to All Participants:
+yes
+from Swaminathan Sahiram to All Participants:
+It says login failed.
+from Swaminathan Sahiram to All Participants:
+same error
+from Swapnil R to All Participants:
+for me it connected..
+from Swaminathan Sahiram to All Participants:
+When I try connecting from EC2 instance connect, I get this error:
+from Swaminathan Sahiram to All Participants:
+
+There was a problem setting up the instance connection 
+Log in failed. If this instance has just started up, try again in a minute or two.
+from Swaminathan Sahiram to All Participants:
+connected 
+from Surya to All Participants:
+https://aws.amazon.com/amazon-linux-ami/2018.03-release-notes/
+5 package(s) needed for security, out of 7 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-26-238 ~]$ 
+from Surya to All Participants:
+it is connecting
+from Surya to All Participants:
+yes
+from vinoth to All Participants:
+where i have configure ec2user in aws console 
+from Swapnil R to All Participants:
+@Vinoth: ec2user is default user.. we wont create it, AWS provides it
+from vinoth to All Participants:
+ok
+from vinoth to All Participants:
+password also same 
+from vinoth to All Participants:
+ok
+from Jeyaseeli to All Participants:
+yes
+from Dinesh Kumar to All Participants:
+I am able to access Hexaware Azure VM..
+You guys check once..
+from Muniraj to All Participants:
+share the commands
+from vinoth to Swapnil R (privately):
+got you, Thanks
+from Muniraj to All Participants:
+Habib, Share the commands on chat window
+from habib to All Attendees:
+$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat/jenkins.repo
+$ sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+$ sudo yum install jenkins -y
+from vinoth to All Participants:
+-----------------------------------
+from habib to All Attendees:
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u141-b15/336fa29ff2bb4ef291e347e091f7f4a7/jdk-8u141-linux-x64.rpm
+from habib to All Attendees:
+sudo yum install -y jdk-8u141-linux-x64.rpm
+from habib to All Attendees:
+sudo service jenkins start
+from habib to All Attendees:
+sudo service jenkins status
+from habib to All Attendees:
+java -version
+
+
+
+http://ec2-13-233-19-2.ap-south-1.compute.amazonaws.com:8080/
+
+
+sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+
+sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+
+sudo yum install -y apache-maven
+
+sudo yum install -y git

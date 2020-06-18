@@ -1,0 +1,39 @@
+     URL Mapping with function
+     /users   => 	//@RequestMapping("/users", Method="POST")
+			@GetMapping("/users")
+			getAllUsers(){    ....  }
+
+@PostMapping("/users")
+getAllUsers(){    ....  }
+
+RESTful ==>  HTTP
+
+HTTP Verbs/Method => Funcionality - CRUD
+------------------------------
+GET 		=> Read
+POST 		=> Create
+PUT 		=> Update
+DELETE 		=> Delete
+
+
+SOAP ==> Simple Object Access Protocol HTTP/SOAP
+HTTP - SOAP
+Request - SOAP Message - xml
+ No stubs - Stubs
+Http Request "/users" - RPC => function call objRef.getAllUsers()
+
+@Controller / @RestController
+
+http https://start.spring.io/starter.zip javaVersion==11 \
+  artifactId==discovery-service name==eureka-service \
+  dependencies==cloud-eureka-server baseDir==discovery-service | tar -xzvf -
+
+http https://start.spring.io/starter.zip \
+  artifactId==car-service name==car-service baseDir==car-service \
+  dependencies==actuator,cloud-eureka,data-jpa,h2,data-rest,web,devtools,lombok | tar -xzvf -
+
+http https://start.spring.io/starter.zip \
+  artifactId==api-gateway name==api-gateway baseDir==api-gateway \
+  dependencies==cloud-eureka,cloud-feign,data-rest,web,cloud-hystrix,lombok | tar -xzvf -
+
+

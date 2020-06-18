@@ -1,0 +1,216 @@
+
+Planning for unplanned work
+
+Test LoadBalancer
+1-> Run RegistryServer 
+2-> Run AccountServer 
+3-> Run WebServer
+4-> Run Main accounts 4444
+5-> Refresh Eureka 
+6-> Kill AccountServer 
+7-> Refresh Browser
+
+LoadBalancer => Ribbon  === Availability
+CircuitBreaker => Hystrix === ??
+API Gateway => Zuul
+
+LoadBalancer => 
+1=> Implicit with Eureka => @LoadBalanced
+2=> Without Eureka => 
+@RibbonClient,
+Ribbon Configiration class
+yaml  file - lostOfServers = s1,s2,
+Browser => /hi => /greeting
+FronEnd => WebServer => Microservice
+ssh -i "habib1.pem" 
+ec2-user@ec2-100-26-121-235.compute-1.amazonaws.com
+ec2-user@ec2-18-189-17-102.us-east-2.compute.amazonaws.com
+
+sudo yum -y install docker
+
+docker version
+Running spring boot app on external Web Server
+1- update <package>war
+2- Add tomcat starter
+3- mvn clean package
+4- Copy war in webapps - tomcat, deploy-jboss
+5- start server
+6- Put the url endpoint in browser
+
+
+WebClient -> Zuul Proxy -> /employee
+
+
+1-delete 4 service projects from workspace and disk.
+2-download zipkin.zip from drive
+3-import zipkin project.
+
+-zipkin-server
+- zipkin + 4 services
+
+Angular = NodeJS
+
+Server-side/Service
+.NET - API
+JAVA - Spring Cloud
+NODEJS - Express
+Python - dJango
+
+Client-side/Front/UI
+Angular -
+React -
+
+
+
+NodeJS=>
+1-> Build Tool  - npm (java - mvn-Maven) - Node Repo. - proxy
+maven-settings.xml => proxy
+npm  -.npmrc -     => proxy
+
+local repo - npm install express - project ..node_modules
+global repo - npm install -g express - users..npm..node_modules
+
+1-remote
+2-global - node_modules
+3-local - node_modules
+
+npm install -g express
+
+npm install express http ip 
+
+10-20
+
+pom.xml => package.json
+
+mvn install => pom.xml
+
+npm install => package.json
+
+npm install --save express
+
+
+npm run compile
+
+
+
+
+
+
+
+
+
+
+
+
+2-> Application Development - lib/module - 
+
+AWS free reg - 12 months + GCP 
+Linux Acandemy - $49 per month
+
+
+Express REST Service===>
+app.route('/book')
+.get("/technical/:id", function(req,resp){ code })
+.get("/social", function(req,resp){ code }))
+
+app.route('/book')
+.get("/technical/:id", (req,resp) => { code })
+.get("/social", (req,resp) => { code }))
+
+app.get('/heroes', (req, res) => {
+   console.log('Returning heroes list');
+   res.send(heroes);
+});
+
+
+S1=threats
+S2=heroes
+
+NodeJS => Expressjs
+=> Eureka Server start => java jar
+=> Zuul => API GATEWAY => java jar
+
+
+
+
+=>S1=>S2
+
+
+
+
+Spring REST Service===>
+@RequestMapping("/book")
+class BooksService
+@GetMapping("/technical/{id}")
+public String getTechBooks(){
+code
+}
+@GetMapping("/social")
+public String getSocialBooks(){
+code
+}
+
+
+1-> Open it on VSCode
+2-> Go to each folder - open terminal
+3-> npm install
+
+java -jar eureka-service-0.0.1-SNAPSHOT.jar
+node heroes.js 3838
+node threats.js 3939
+http://localhost:8761
+java -jar zuul-0.0.1-SNAPSHOT.jar --server.port=9090 --eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+
+http://localhost:9090/heroes-service/heroes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mvn org.apache.maven.plugins:maven-dependency-plugin:3.0.2:copy 
+-Dartifact=handof.nod:clirunnertest:1.0.0:jar 
+-DoutputDirectory=. 
+&& java -jar clirunnertest.jar 
+
+PIM06102048111488
+PIM06452026122288
+
+
+
+
+
+
+
+

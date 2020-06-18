@@ -1,0 +1,73 @@
+cd heroes
+
+npm init -y
+npm install express body-parser
+
+Terminal 1=>
+node ./heroes/heroes.js 8081
+
+curl -i --request GET localhost:8081/heroes
+
+cd threats
+
+npm init -y
+npm install express body-parser request
+
+Terminal 2=>
+node threats/threats.js 8082
+
+curl -i --request POST --header "Content-Type: application/json" --data '{"heroId": 1, "threatId": 1}' localhost:8082/assignment
+
+
+Running Eureka Server =>
+java -jar eureka-service-0.0.1-SNAPSHOT.jar
+
+
+http://localhost:8761
+
+Root directory - 
+curl -i --request POST --header "Content-Type: application/json" --data @eureka-curl-payload.json http://localhost:8761/eureka/apps/my-service
+
+
+cd eureka-helper
+
+npm init -y
+npm install request 
+npm install ip
+
+
+
+node heroes.js 3838
+node threats.js 3939
+
+Running Zuul ==>
+
+java -jar zuul-0.0.1-SNAPSHOT.jar
+
+java -jar zuul-0.0.1-SNAPSHOT.jar --server.port=9090 --eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+
+http://localhost:8080/routes 
+
+
+curl -i --request POST --header "Content-Type: application/json" --data "{\"heroId\": 1, \"threatId\": 1}" localhost:8080/threats-service/assignment
+
+
+================================================>
+Scaling Microservices
+
+
+java -jar eureka-service-0.0.1-SNAPSHOT.jar
+
+java -jar zuul-0.0.1-SNAPSHOT.jar --eureka.instance.leaseRenewalIntervalInSeconds=30
+
+node threats/threats.js 3000
+
+node heroes/heroes.js 3001
+
+curl -i --request POST --header "Content-Type: application/json" --data "{\"heroId\": 1, \"threatId\": 1}" localhost:9090/threats-service/assignment
+
+node heroes/heroes.js 3002
+
+curl -i --request GET localhost:8080/heroes-service/heroes
+
+
