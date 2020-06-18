@@ -1,0 +1,16 @@
+http://localhost:8080/api/v1/instructorsDetail --- Post
+{
+    
+    "youtubeChannel": "Java Guides",
+    "hobby": "Cricket Playing",
+    "instructor": {
+        
+        "firstName" : "Swapnil",
+        "lastName" : "Rawath",
+        "email" : "swapnil.rawath@gmailcom"
+    }
+}
+
+http://localhost:8080/api/v1/instructorsDetail --- Get
+
+http://localhost:8080/api/v1/instructorsDetail/3 --- Delete

@@ -1,0 +1,15 @@
+http://localhost:8080/api/v1/instructors --- Post
+{
+    "id" : 1,
+    "firstName" : "Swapnil",
+    "lastName" : "Rawath",
+    "email" : "swapnil.rawath@gmailcom",
+    "instructorDetail" : {
+        "hobby" : "Cricket Playing",
+        "youtubeChannel" : "Java Guides"
+    }
+}
+
+http://localhost:8080/api/v1/instructors --- Get
+
+http://localhost:8080/api/v1/instructors/3 --- Delete
