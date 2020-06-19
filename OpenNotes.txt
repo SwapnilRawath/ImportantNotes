@@ -1,0 +1,14 @@
+https://www.youtube.com/watch?v=hzWEw--OziQ&list=PLTyWtrsGknYe3E6h2gKBRy-wk0MrQjPPz&index=3
+
+https://www.youtube.com/watch?v=IMM58syURi4
+
+$cf -v
+
+
+$cf login
+API endpoint: https://api.run.pivotal.io
+Email : swapnil.kumar54@gmail.com
+Password : <<enter password>>
+
+go to target folder of the application and push the jar to PCF.
+$ C:\Users\Kaira Rawath\Downloads\springbootweb-master>cf push springbootswagger-org -p target\spring-boot-web-0.0.1-SNAPSHOT.jar
